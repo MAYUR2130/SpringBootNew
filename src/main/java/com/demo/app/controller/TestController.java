@@ -5,13 +5,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/test")
 public class TestController {
 	
-	@RequestMapping(value="/hello",method=RequestMethod.GET)
+	@RequestMapping(value="/testApi",method=RequestMethod.GET)
     TestDto home() {
          
-        TestDto test=new TestDto("mk",3);
+        TestDto test=new TestDto("Product",100);
         return test;
     }
 	

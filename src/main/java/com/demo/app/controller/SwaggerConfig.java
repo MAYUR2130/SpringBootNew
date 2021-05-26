@@ -54,13 +54,13 @@ public class SwaggerConfig {
 	    
 		// API Info
 		return new ApiInfo(
-	            "Title:Olam Direct crop feedback service",
-	            "Description: Crop feedback services for Olam Direct",
+	            "Title:AWS Demo project",
+	            "Spring Boot REST API for Online Store ",
 	            "Version 1.3",
-	            "ToSURL:www.olam.com",
-	            new Contact("Contact:Olam","ContactURL:www.olam.com","ContactEmail"),
+	            "ToURL:",
+	            new Contact("Contact:Admin","ContactURL:","ContactEmail"),
 	            "LICENSE",
-	            "LicenseURL:www.olam.com", new ArrayList<>());
+	            "LicenseURL:", new ArrayList<>());
 	}
 }
 
