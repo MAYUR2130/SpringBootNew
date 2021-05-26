@@ -1,17 +1,17 @@
-package com.demo.app.controller;
+package com.aws.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class TestController {
+public class ProductController {
 	
 	@RequestMapping(value="/testApi",method=RequestMethod.GET)
-    TestDto home() {
+    ProductDto home() {
          
-        TestDto test=new TestDto("Product",100);
-        return test;
+        ProductDto product=new ProductDto("Product",100);
+        return product;
     }
 	
 	

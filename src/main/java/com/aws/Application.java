@@ -1,13 +1,13 @@
-package com.demo.app;
+package com.aws;
 
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 
 @SpringBootApplication
-public class DemoApp {
+public class Application {
 
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(DemoApp.class, args);
+        SpringApplication.run(Application.class, args);
  }
 }
