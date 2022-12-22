@@ -15,8 +15,8 @@ public class ProductController {
 	String key="${keyvalue}";
 	
 	
-    @Value("${keyvalue}")
-    private String key2;
+        @Value("${keyvalue}")
+        private String key2;
 	
 	@RequestMapping(value="/testApi",method=RequestMethod.GET)
     ProductDto home() {
