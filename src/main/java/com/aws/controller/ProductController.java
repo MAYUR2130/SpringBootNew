@@ -20,7 +20,7 @@ public class ProductController {
 	
 	@RequestMapping(value="/testApi",method=RequestMethod.GET)
     ProductDto home() {
-        keyvalue
+        
 	System.out.println("1)secret is "+ key)); 	
 	System.out.println("2)secret is "+ key2));	
 	//System.out.println("secret is "+ environment.getProperty("testsecretkey")); 
