@@ -10,9 +10,9 @@ import org.springframework.beans.factory.annotation.Value;
 @RestController
 public class ProductController {
 	
-	//@Autowired
-	//private Environment environment;
-	String key="${keyvalue}";
+	@Autowired
+	private Environment environment;
+
 	
 	
         @Value("${keyvalue}")
@@ -20,10 +20,9 @@ public class ProductController {
 	
 	@RequestMapping(value="/testApi",method=RequestMethod.GET)
     ProductDto home() {
-        
-	System.out.println("1)secret is "+ key); 	
-	System.out.println("2)secret is "+ key2);	
-	//System.out.println("secret is "+ environment.getProperty("testsecretkey")); 
+	
+	System.out.println("secret is "+ key2);	
+	System.out.println("env secret is "+ environment.getProperty("testsecretkey")); 
         ProductDto product=new ProductDto(key2,100);
         return product;
     }
